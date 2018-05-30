@@ -1,2 +1,23 @@
----
 galaxy_info:
+  author: Christoph Görn
+  description: Create some default ImageStreams required by Project Thoth
+  company: Red Hat Inc., the Office of the CTO
+
+  issue_tracker_url: https://github.com/thoth-station/ansible-roles/issues
+
+  license: GPLv3
+
+  min_ansible_container_version: 0.2.0
+  min_ansible_version: 2.5.0
+
+  platforms:
+  - name: Fedora
+    versions:
+    - 28
+    - 27
+
+  galaxy_tags:
+    - Thoth
+    - AI-Stacks
+
+dependencies: []
