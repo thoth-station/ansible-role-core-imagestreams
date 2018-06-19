@@ -3,7 +3,7 @@ galaxy_info:
   description: Create some default ImageStreams required by Project Thoth
   company: Red Hat Inc., the Office of the CTO
 
-  issue_tracker_url: https://github.com/thoth-station/ansible-roles/issues
+  issue_tracker_url: https://github.com/thoth-station/thoth-core-imagestreams
 
   license: GPLv3
 
@@ -18,6 +18,6 @@ galaxy_info:
 
   galaxy_tags:
     - Thoth
-    - AI-Stacks
+    - AIStacks
 
 dependencies: []

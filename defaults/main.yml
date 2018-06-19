@@ -1,2 +1,3 @@
 ---
 # defaults file for thoth-core-imagestreams
+THOTH_INFRA_NAMESPACE: thoth-stage-core

@@ -9,6 +9,10 @@ A Namespace...
 
 None
 
+## Tests
+
+`./tests/run -w all-tests`
+
 ## License
 
 GPLv3
