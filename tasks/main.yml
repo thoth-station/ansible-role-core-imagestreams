@@ -24,8 +24,7 @@
     with_items:
       - package-releases-imagestream
       - graph-refresh-imagestream
-      - cleanup-imagestream
       - graph-sync-imagestream
       - package-extract-imagestream
-      - adviser
-      - solver
+      - adviser-imagestream
+      - solver-imagestream
