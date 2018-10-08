@@ -1,4 +1,4 @@
-# thoth-core-imagestreams
+# core-imagestreams
 This will create ImageStreams required by [Project Thoth](https://github.com/thoth-station).
 
 ## Role Variables

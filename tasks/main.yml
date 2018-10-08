@@ -19,16 +19,6 @@
       - 26
       - 27
 
-  - name: create Thoth Core component's ImageStream templates
-    command: oc create --namespace "{{ THOTH_INFRA_NAMESPACE  }}" --filename "{{ item }}"
-    with_items:
-      - https://raw.githubusercontent.com/thoth-station/package-releases-job/master/openshift/imageStream-template.yaml
-      - https://raw.githubusercontent.com/thoth-station/graph-refresh-job/master/openshift/imageStream-template.yaml
-      - https://raw.githubusercontent.com/thoth-station/cleanup-job/master/openshift/imageStream-template.yaml
-      - https://raw.githubusercontent.com/thoth-station/graph-sync-job/master/openshift/imageStream-template.yaml
-      - https://raw.githubusercontent.com/thoth-station/package-extract/master/openshift/imageStream-template.yaml
-    ignore_errors: true
-
   - name: create Thoth Core component's ImageStream
     command: oc new-app --template="{{ THOTH_INFRA_NAMESPACE  }}/{{ item }}"
     with_items:
@@ -37,3 +27,5 @@
       - cleanup-imagestream
       - graph-sync-imagestream
       - package-extract-imagestream
+      - adviser
+      - solver

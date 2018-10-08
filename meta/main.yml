@@ -3,12 +3,11 @@ galaxy_info:
   description: Create some default ImageStreams required by Project Thoth
   company: Red Hat Inc., the Office of the CTO
 
-  issue_tracker_url: https://github.com/thoth-station/thoth-core-imagestreams
+  issue_tracker_url: https://github.com/thoth-station/core-imagestreams
 
   license: GPLv3
 
-  min_ansible_container_version: 0.2.0
-  min_ansible_version: 2.5.0
+  min_ansible_version: 2.6.0
 
   platforms:
   - name: Fedora
@@ -17,7 +16,7 @@ galaxy_info:
     - 27
 
   galaxy_tags:
-    - Thoth
-    - AIStacks
+    - thoth
+    - aistacks
 
 dependencies: []
