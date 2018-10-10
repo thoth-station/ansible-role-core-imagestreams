@@ -20,7 +20,7 @@
       - 27
 
   - name: create Thoth Core component's ImageStream
-    command: oc new-app --template="{{ THOTH_INFRA_NAMESPACE  }}/{{ item }}"
+    shell: oc process --namespace "{{ THOTH_INFRA_NAMESPACE  }}" "{{ item }}" | oc apply -f -
     with_items:
       - package-releases-imagestream
       - graph-refresh-imagestream
