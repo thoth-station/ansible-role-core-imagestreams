@@ -26,5 +26,8 @@
       - graph-refresh-imagestream
       - graph-sync-imagestream
       - package-extract-imagestream
+      - package-releases-imagestream
+      - cve-update-imagestream
       - adviser-imagestream
       - solver-imagestream
+      - user-api-imagestream
