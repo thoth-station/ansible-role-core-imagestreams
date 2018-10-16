@@ -16,8 +16,9 @@
   - name: importing required Fedora ImageStreamTags from upstream Registries
     command: "oc tag --namespace {{ THOTH_INFRA_NAMESPACE }} registry.fedoraproject.org/fedora:{{ item }} fedora:{{ item }}"
     with_items:
-      - 26
       - 27
+      - 28
+      - 29
 
   - name: create Thoth Core component's ImageStream
     shell: oc process --namespace "{{ THOTH_INFRA_NAMESPACE  }}" "{{ item }}" | oc apply -f -
