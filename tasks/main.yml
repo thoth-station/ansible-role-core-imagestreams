@@ -2,7 +2,6 @@
   - name: "make sure to use project {{ THOTH_INFRA_NAMESPACE }}"
     command: "oc project {{ THOTH_INFRA_NAMESPACE }}"
     register: project_exists
-    ignore_errors: true
 
   - name: importing CentOS7 Python3.6 S2I container images from CentOS
     command: "oc import-image registry.centos.org/centos/python-36-centos7 --confirm"
@@ -32,3 +31,4 @@
       - adviser-imagestream
       - solver-imagestream
       - user-api-imagestream
+    ignore_errors: true
