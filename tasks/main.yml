@@ -22,13 +22,15 @@
   - name: create Thoth Core component's ImageStream
     shell: oc process --namespace "{{ THOTH_INFRA_NAMESPACE  }}" "{{ item }}" | oc apply -f -
     with_items:
-      - package-releases-imagestream
-      - graph-refresh-imagestream
-      - graph-sync-imagestream
-      - package-extract-imagestream
-      - package-releases-imagestream
-      - cve-update-imagestream
-      - adviser-imagestream
-      - solver-imagestream
-      - user-api-imagestream
+      - "package-releases-imagestream"
+      - "graph-refresh-imagestream"
+      - "graph-sync-imagestream"
+      - "package-extract-imagestream"
+      - "package-releases-imagestream"
+      - "cve-update-imagestream"
+      - "adviser-imagestream"
+      - "solver-imagestream"
+      - "user-api-imagestream"
+      - "cleanup-imagestream"
+      - "isis-api-imagestream"
     ignore_errors: true
