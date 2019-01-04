@@ -33,4 +33,5 @@
       - "user-api-imagestream"
       - "cleanup-imagestream"
       - "isis-api-imagestream"
+      - "management-api-imagestream"
     ignore_errors: true
