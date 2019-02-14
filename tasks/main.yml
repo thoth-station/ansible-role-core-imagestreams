@@ -34,4 +34,6 @@
       - "cleanup-imagestream"
       - "isis-api-imagestream"
       - "management-api-imagestream"
+      - "graph-sync-scheduler-imagestream"
+      - "build-watcher-imagestream"
     ignore_errors: true
