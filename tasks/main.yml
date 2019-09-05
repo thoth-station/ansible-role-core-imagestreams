@@ -3,7 +3,11 @@
     command: "oc project {{ THOTH_INFRA_NAMESPACE }}"
     register: project_exists
 
-  - name: importing CentOS7 Python3.6 S2I container images from CentOS
+  - name: importing Thoth's s2i-thoth-ubi8-py36 container image
+    command: "oc import-image quay.io/thoth-station/s2i-thoth-ubi8-py36 --confirm"
+    ignore_errors: false
+
+  - name: importing legacy CentOS7 Python3.6 S2I container images from CentOS
     command: "oc import-image registry.centos.org/centos/python-36-centos7 --confirm"
     ignore_errors: true
     register: cent_os_registry
@@ -37,3 +41,4 @@
       - "graph-sync-scheduler-imagestream"
       - "build-watcher-imagestream"
     ignore_errors: true
+
